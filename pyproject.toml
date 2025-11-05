@@ -1,0 +1,12 @@
+[project]
+name = "src"
+version = "0.0.1"
+description = "An MLOps project for productionizing models"
+authors = [{name = "Prakriti", email = "prakritisrishti03@gmail.com"}]
+
+[tool.setuptools]
+packages = ["cloud_storage", "components", "configuration", "constants", "data_access", "entity", "exception", "logger", "pipline", "utils"]
+
+# Define dependencies as an object and point to requirements.txt
+[tool.setuptools.dynamic]
+dependencies = {file = "requirements.txt"}
